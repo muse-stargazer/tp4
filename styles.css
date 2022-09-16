@@ -1,0 +1,58 @@
+h1 {
+  font-family: Arial;
+  font-size: 40px;
+  text-shadow: 2px 2px 5px red;  
+}
+
+h4 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  color: maroon;
+}
+
+ul, ol {
+  margin-top: 0;
+}
+
+ol li {
+  margin-top: 10px;
+}
+
+ul li {
+  margin-top: 4px;
+}
+
+li {
+  font-size: 18px;
+  font-family: 'Caladea', serif;
+}
+
+body {
+  background-color: papayawhip;
+}
+
+.copyright {
+  font-family: Arial;
+  font-size: 12px;
+  font-style: italic;
+}
+
+#ingredients {
+  color: mediumblue;
+}
+
+#equipment {
+  color: darkgreen;
+}
+
+#directions {
+  color: black;
+}
+
+.notice {
+  font-weight: bold;
+}
+
+.measure {
+  font-style: italic;
+}
