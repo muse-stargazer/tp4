@@ -67,6 +67,7 @@ body {
 
 #directions {
   color: black;
+  padding-bottom: 8vw;
 }
 
 .notice {
@@ -173,7 +174,9 @@ body {
     grid-row-start: 1;
   }
   #directions {
-    grid-row-start: 2; 
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 
