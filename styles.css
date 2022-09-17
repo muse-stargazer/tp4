@@ -1,3 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+header {
+  
+}
+
 h1 {
   font-family: Arial;
   font-size: 40px;
@@ -37,6 +45,7 @@ body {
   font-size: 12px;
   font-style: italic;
   text-align: center;
+  
 }
 
 #ingredients {
@@ -59,8 +68,20 @@ body {
   font-style: italic;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: chocolate;
+}
+
 #bigflex {
   display: flex;
   flex-direction: row;
-  
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 20px;
+  flex: 1;
+  min-height: 100vh;
+  margin: auto 0;
 }
