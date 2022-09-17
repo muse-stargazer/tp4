@@ -24,7 +24,6 @@ h1 {
 }
 
 #headercap {
-  font-size: 1vw;
   color: darkred;
   align-self: flex-end;
   align-self: bottom;
@@ -142,6 +141,9 @@ body {
 @media screen and (max-width: 1020px) {
   h1 {
     font-size: 4.5vw;
+  }
+  #headercap {
+    font-size: 
   }
   h4 {
     font-size: 3.5vw;
