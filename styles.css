@@ -98,7 +98,6 @@ body {
   gap: 20px;
   min-height: 95vh;
   padding-left: 2vw;
-  paddding-right: 2vw;
 }
 
 @media screen and (max-width: 1400px) {
@@ -149,6 +148,22 @@ body {
   }
 }
 
+@media screen and (max-width: 1020px) and (min-width: 531px) and (orientation: portrait) {
+  #bigflex {
+    display: grid;
+    justify-items: center;
+  }
+  #ingredients {
+    grid-row-start: 1;
+  }
+  #equipment {
+    grid-row-start: 1;
+  }
+  #directions {
+    grid-row-start: 2; 
+  }
+}
+
 @media screen and (max-width: 650px) {
   h1 {
     font-size: 6vw;
@@ -171,23 +186,7 @@ body {
   li {
     font-size: 3.75vw;
   }
+  #bigflex {
+    flex-direction: column;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
