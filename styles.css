@@ -83,6 +83,8 @@ body {
   width: 100%;
   background-color: chocolate;
   color: white;
+  font-family: Arial;
+  font-size: .75vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -110,6 +112,12 @@ body {
   li {
     font-size: 1.5vw;
   }
+  #footer {
+    font-size: 1vw;
+  }
+  .copyright {
+    font-size: 1vw;
+  }
 }
 
 @media screen and (max-width: 1020px) {
@@ -128,9 +136,15 @@ body {
   ol li {
     margin-top: 1.5vw;
   }
+  #footer {
+    font-size: 1.5vw;
+  }
+  .copyright {
+    font-size: 1.2vw;
+  }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 865px) {
   h1 {
     font-size: 5vw;
   }
@@ -151,7 +165,6 @@ body {
 @media screen and (max-width: 1020px) and (min-width: 531px) and (orientation: portrait) {
   #bigflex {
     display: grid;
-    justify-items: center;
   }
   #ingredients {
     grid-row-start: 1;
@@ -174,6 +187,12 @@ body {
   li {
     font-size: 3vw;
   }
+  #footer {
+    font-size: 2vw;
+  }
+  .copyright {
+    font-size: 1.5vw;
+  }
 }
 
 @media screen and (max-width: 530px) {
@@ -188,5 +207,11 @@ body {
   }
   #bigflex {
     flex-direction: column;
+  }
+  #footer {
+    font-size: 2.5vw;
+  }
+  .copyright {
+    font-size: 2vw;
   }
 }
