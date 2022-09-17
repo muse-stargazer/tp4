@@ -28,6 +28,7 @@ h1 {
   align-self: flex-end;
   align-self: bottom;
   margin: auto 0 0;
+  padding-right: 1vw;
 }
 
 h4 {
@@ -72,6 +73,7 @@ body {
   font-size: .75vw;
   font-style: italic;
   text-align: center;
+  margin: .5vw;
 }
 
 #ingredients {
@@ -84,7 +86,6 @@ body {
 
 #directions {
   color: #652B10;
-  padding-bottom: 8vw;
 }
 
 .notice {
@@ -93,6 +94,27 @@ body {
 
 .measure {
   font-style: italic;
+}
+
+#thanks {
+  background-image: url(flan-con-dulce-de-leche-uruguayo.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vw;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8vw;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 4vw;
+  flex-wrap: wrap;
+}
+
+#thankscap {
+  color: black;
+  align-self: flex-start;
 }
 
 #footer {
@@ -143,7 +165,7 @@ body {
     font-size: 4.5vw;
   }
   #headercap {
-    font-size: 
+    font-size:
   }
   h4 {
     font-size: 3.5vw;
@@ -163,7 +185,7 @@ body {
   .copyright {
     font-size: 1.2vw;
   }
-   ul,
+  ul,
   ol {
     box-sizing: content-box;
     border-left: .5vw solid maroon;
@@ -172,90 +194,95 @@ body {
     padding-right: 5vw;
     margin-left: 0;
     margin-right: 0;
-}
-
-@media screen and (max-width: 865px) {
-  h1 {
-    font-size: 5vw;
   }
-  h4 {
-    font-size: 4vw;
+  @media screen and (max-width: 865px) {
+    h1 {
+      font-size: 5vw;
+    }
+    h4 {
+      font-size: 4vw;
+    }
+    li {
+      font-size: 2.5vw;
+    }
+    ul li {
+      margin-top: 1.5vw;
+    }
+    ol li {
+      margin-top: 2vw;
+    }
   }
-  li {
-    font-size: 2.5vw;
+  @media screen and (max-width: 1020px) and (min-width: 531px) {
+    #bigflex {
+      display: grid;
+      grid-row-gap: .5vw;
+    }
+    #ingredients {
+      grid-row-start: 1;
+    }
+    #equipment {
+      grid-row-start: 1;
+    }
+    #directions {
+      grid-row-start: 2;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      padding-top: 0;
+      margin-top: 0;
+    }
   }
-  ul li {
-    margin-top: 1.5vw;
+  @media screen and (max-width: 650px) {
+    h1 {
+      font-size: 6vw;
+    }
+    h4 {
+      font-size: 5vw;
+    }
+    li {
+      font-size: 3vw;
+    }
+    #footer {
+      font-size: 2vw;
+    }
+    .copyright {
+      font-size: 1.5vw;
+    }
+    #thanks {
+      width: 100%;
+    }
   }
-  ol li {
-    margin-top: 2vw;
+  @media screen and (max-width: 530px) {
+    h1 {
+      font-size: 7vw;
+    }
+    h4 {
+      font-size: 6vw;
+    }
+    li {
+      font-size: 3.75vw;
+    }
+    #bigflex {
+      display: flex;
+      flex-direction: column;
+      align-items: space-evenly;
+    }
+    ul,
+    ol {
+      padding-left: 8vw;
+      padding-right: 8vw;
+      border-left: 1vw solid maroon;
+      border-right: 1vw solid maroon;
+    }
+    #thanks {
+      display: flex;
+      flex-direction: column;
+      height: 50vw;
+      padding-bottom: 8vw;
+    }
+    #footer {
+      font-size: 2.5vw;
+    }
+    .copyright {
+      font-size: 2vw;
+    }
   }
-}
-
-@media screen and (max-width: 1020px) and (min-width: 531px) {
-  #bigflex {
-    display: grid;
-    grid-row-gap: .5vw;
-  }
-  #ingredients {
-    grid-row-start: 1;
-  }
-  #equipment {
-    grid-row-start: 1;
-  }
-  #directions {
-    grid-row-start: 2;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding-top: 0;
-    margin-top: 0;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  h1 {
-    font-size: 6vw;
-  }
-  h4 {
-    font-size: 5vw;
-  }
-  li {
-    font-size: 3vw;
-  }
-  #footer {
-    font-size: 2vw;
-  }
-  .copyright {
-    font-size: 1.5vw;
-  }
-}
-
-@media screen and (max-width: 530px) {
-  h1 {
-    font-size: 7vw;
-  }
-  h4 {
-    font-size: 6vw;
-  }
-  li {
-    font-size: 3.75vw;
-  }
-  #bigflex {
-    display: flex;
-    flex-direction: column;
-    align-items: space-evenly;
-  }
-  ul,
-  ol {
-    padding-left: 8vw;
-    padding-right: 8vw;
-    border-left: 1vw solid maroon;
-    border-right: 1vw solid maroon;
-  }
-  #footer {
-    font-size: 2.5vw;
-  }
-  .copyright {
-    font-size: 2vw;
-  }
-}
